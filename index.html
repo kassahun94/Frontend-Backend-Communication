@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add Products to Database</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="header">
+        <h1>Add Product</h1>
+    </div>
+
+    <form action="http://localhost:3001/addiphones" method="post">
+        <label for="iphoneId">Product ID:</label><br />
+        <input type="text" name="iphoneId" required />
+        <br /><br />
+        
+        <label for="imgPath">iPhone Image Path:</label><br />
+        <input type="text" name="imgPath" required />
+        <br /><br />
+        
+        <label for="iphoneLink">Product Page Link:</label><br />
+        <input type="text" name="iphoneLink" required />
+        <br /><br />
+        
+        <label for="ProductName">Product Title:</label><br />
+        <input type="text" name="ProductName" required />
+        <br /><br />
+        
+        <label for="StartPrice">Starting Price:</label><br />
+        <input type="text" name="StartPrice" required />
+        <br /><br />
+        
+        <label for="priceRange">Price Range:</label><br />
+        <input type="text" name="priceRange" required />
+        <br /><br />
+        
+        <label for="briefDescription">Brief Description:</label><br />
+        <textarea name="briefDescription" cols="30" rows="10" required></textarea>
+        <br /><br />
+        
+        <label for="fullDescription">Full Description:</label><br />
+        <textarea name="fullDescription" cols="30" rows="10" required></textarea>
+        <br /><br />
+        
+        <input type="submit" value="Submit" />
+    </form>
+</body>
+</html>
